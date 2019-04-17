@@ -21,7 +21,7 @@ public class TicTacToe {
             position = in.nextInt();
             GameBoard game = new GameBoard(size, position);
             for (int i = 0; i < game.getSize()*game.getSize(); ++i) {
-                System.out.println("Enter the position");
+                System.out.println("Enter the position ");
                 int position1 = in.nextInt();
                 int position2 = in.nextInt();
                 if ((i % 2) == 0)

@@ -33,7 +33,7 @@ public class GameBoard {
     public void play(char symbol, int n1, int n2) {
         if (n1>=size||n2>=size)
         {
-            System.out.println("Out of range");
+            System.out.println("Out of range ");
             Scanner in = new Scanner(System.in);
             int n11 = in.nextInt();
             int n22 = in.nextInt();

@@ -31,7 +31,7 @@ public class Act {
 
     public static boolean win(GameBoard game, char xo) {
         for (int i = 0; i < game.getSize() - game.getWinerposition() + 1; ++i) {
-            for (int j = 0; j < game.getSize() - game.getWinerposition() + 1; ++j) {
+            for (int j = 0;  j < game.getSize() - game.getWinerposition() + 1; ++j) {
                 if (checkLines(xo, game, i, j) || checkDiagonal(xo, game, i, j))
                     return true;
             }
