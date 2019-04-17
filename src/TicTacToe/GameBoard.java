@@ -4,13 +4,34 @@ import java.util.Scanner;
 
 public class GameBoard {
     private char[][] square;
+    private int size;
+    private int winerposition;
 
+    public int getWinerposition() {
+        return winerposition;
+    }
 
-    GameBoard(int size) {
+    GameBoard(int size, int winerposition) {
         square = new char[size][size];
+        this.size = size;
+        this.winerposition = winerposition;
+        for (int i = 0; i < square.length; ++i) {
+            for (int j = 0; j < square.length; ++j) {
+                square[i][j] = '.';
+            }
+        }
+    }
+
+    public char[][] getSquare() {
+        return square;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     public void play(char symbol, int n1, int n2) {
+
         if (square[n1][n2] == 'o' || square[n1][n2] == 'x') {
             System.out.println("Position is busy. Change the position");
             Scanner in = new Scanner(System.in);
@@ -26,10 +47,8 @@ public class GameBoard {
             }
             System.out.println();
         }
-    }
-
-    public static void gameIsFineshed(GameBoard game) {
-        if
 
     }
+
+
 }
