@@ -21,7 +21,7 @@ public class TicTacToe {
             position = in.nextInt();
             GameBoard game = new GameBoard(size, position);
             for (int i = 0; i < game.getSize()*game.getSize(); ++i) {
-                System.out.println("Enter the postion");
+                System.out.println("Enter the position");
                 int position1 = in.nextInt();
                 int position2 = in.nextInt();
                 if ((i % 2) == 0)
@@ -31,11 +31,11 @@ public class TicTacToe {
                 if (i>=position)
                     if(Act.win(game,'x')||Act.win(game,'0')) {
                         if (i % 2 == 0) {
-                            System.out.println(player1+" is win");
+                            System.out.println(player1+ " win");
                             ++score1;
                         }
                         else{
-                            System.out.println(player2+" is win");
+                            System.out.println(player2+" win");
                             ++score2;
                         }
                         System.out.println("Score "+score1 +":"+score2);

@@ -23,9 +23,8 @@ public class Act {
             contour &=  (game.getSquare()[p1][p2 + i] == xo);
             vertikal &= (game.getSquare()[p1 + i][p2] == xo);
         }
-        if (contour || vertikal) {
-            return true;
-        }
+        if (contour || vertikal) return true;
+
         return false;
 
     }
